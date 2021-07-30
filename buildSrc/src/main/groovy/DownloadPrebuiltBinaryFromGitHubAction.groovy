@@ -26,7 +26,7 @@ class DownloadPrebuiltBinaryFromGitHubAction extends DefaultTask {
 
     private final OneTimeLogger tokenWarning = new OneTimeLogger({
         error("""No github access token is specified. Latest artifacts will need to be included manually.
-              |The access token needs to have the 'read-public' property. Specify using:
+              |The access token needs to have the 'public_repo' property. Specify using:
               |    -PgithubAccessToken=<your token>
               |or by setting
               |    githubAccessToken=<your token>

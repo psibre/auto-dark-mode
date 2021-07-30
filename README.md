@@ -41,7 +41,7 @@ in the given environment. [A custom Gradle plugin](buildSrc/src/main/groovy/UseP
 downloads these artifacts during the build if necessary.
 
 ##### This step requires a GitHub access token
-For Gradle to be able to retrieve the pre-built artifacts, you need to provide a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) using the `githubAccessToken` property in [`gradle.properties`](gradle.properties) file. The access token only needs to have the permission to read repositories. Be sure to **not** commit your token.
+For Gradle to be able to retrieve the pre-built artifacts, you need to provide a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) using the `githubAccessToken` property in [`gradle.properties`](gradle.properties) file. The access token only needs to have the permission to read public repositories (`public_repo` scope). Be sure to **not** commit your token.
 
 ##### Requirements for building
 
